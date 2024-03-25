@@ -3,7 +3,7 @@
 // This file was auto-generated. Please do not edit it.
 
 /// <reference path="./lib/addons/p5.sound.d.ts" />
-import * as p5 from './index';
+import * as p5 from './p5.min.js';
 declare global {
   /**
    *   Creates a screen reader accessible description for
@@ -52,11 +52,7 @@ declare global {
    *   @param text description of the element
    *   @param [display] either LABEL or FALLBACK
    */
-  function describeElement(
-    name: string,
-    text: string,
-    display?: p5.DESCRIBE_DISPLAY,
-  ): void;
+  function describeElement(name: string, text: string, display?: p5.DESCRIBE_DISPLAY): void;
 
   /**
    *   textOutput() creates a screenreader accessible
@@ -706,13 +702,7 @@ declare global {
    *   @param [maxA] range for the alpha.
    *   @chainable
    */
-  function colorMode(
-    mode: p5.UNKNOWN_P5_CONSTANT,
-    max1: number,
-    max2: number,
-    max3: number,
-    maxA?: number,
-  ): p5;
+  function colorMode(mode: p5.UNKNOWN_P5_CONSTANT, max1: number, max2: number, max3: number, maxA?: number): p5;
 
   /**
    *   Sets the color used to fill shapes. Calling
@@ -1089,16 +1079,7 @@ declare global {
    *   more than 50.
    *   @chainable
    */
-  function arc(
-    x: number,
-    y: number,
-    w: number,
-    h: number,
-    start: number,
-    stop: number,
-    mode?: p5.ARC_MODE,
-    detail?: number,
-  ): p5;
+  function arc(x: number, y: number, w: number, h: number, start: number, stop: number, mode?: p5.ARC_MODE, detail?: number): p5;
 
   /**
    *   Draws an ellipse (oval) to the canvas. An ellipse
@@ -1144,13 +1125,7 @@ declare global {
    *   Default value is 25. Won't draw a stroke for a
    *   detail of more than 50.
    */
-  function ellipse(
-    x: number,
-    y: number,
-    w: number,
-    h: number,
-    detail?: number,
-  ): void;
+  function ellipse(x: number, y: number, w: number, h: number, detail?: number): void;
 
   /**
    *   Draws a circle to the canvas. A circle is a round
@@ -1205,14 +1180,7 @@ declare global {
    *   @param z2 the z-coordinate of the second point.
    *   @chainable
    */
-  function line(
-    x1: number,
-    y1: number,
-    z1: number,
-    x2: number,
-    y2: number,
-    z2: number,
-  ): p5;
+  function line(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): p5;
 
   /**
    *   Draws a point, a single coordinate in space. Its
@@ -1281,18 +1249,7 @@ declare global {
    *   y-direction.
    *   @chainable
    */
-  function quad(
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number,
-    x3: number,
-    y3: number,
-    x4: number,
-    y4: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function quad(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, x4: number, y4: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draws a quad to the canvas. A quad is a
@@ -1325,22 +1282,7 @@ declare global {
    *   y-direction.
    *   @chainable
    */
-  function quad(
-    x1: number,
-    y1: number,
-    z1: number,
-    x2: number,
-    y2: number,
-    z2: number,
-    x3: number,
-    y3: number,
-    z3: number,
-    x4: number,
-    y4: number,
-    z4: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function quad(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, x3: number, y3: number, z3: number, x4: number, y4: number, z4: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draws a rectangle to the canvas. A rectangle is a
@@ -1374,16 +1316,7 @@ declare global {
    *   @param [bl] optional radius of bottom-left corner.
    *   @chainable
    */
-  function rect(
-    x: number,
-    y: number,
-    w: number,
-    h?: number,
-    tl?: number,
-    tr?: number,
-    br?: number,
-    bl?: number,
-  ): p5;
+  function rect(x: number, y: number, w: number, h?: number, tl?: number, tr?: number, br?: number, bl?: number): p5;
 
   /**
    *   Draws a rectangle to the canvas. A rectangle is a
@@ -1416,14 +1349,7 @@ declare global {
    *   y-direction (for WebGL mode).
    *   @chainable
    */
-  function rect(
-    x: number,
-    y: number,
-    w: number,
-    h: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function rect(x: number, y: number, w: number, h: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draws a square to the canvas. A square is a
@@ -1456,15 +1382,7 @@ declare global {
    *   @param [bl] optional radius of bottom-left corner.
    *   @chainable
    */
-  function square(
-    x: number,
-    y: number,
-    s: number,
-    tl?: number,
-    tr?: number,
-    br?: number,
-    bl?: number,
-  ): p5;
+  function square(x: number, y: number, s: number, tl?: number, tr?: number, br?: number, bl?: number): p5;
 
   /**
    *   Draws a triangle to the canvas. A triangle is a
@@ -1481,14 +1399,7 @@ declare global {
    *   @param y3 y-coordinate of the third point.
    *   @chainable
    */
-  function triangle(
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number,
-    x3: number,
-    y3: number,
-  ): p5;
+  function triangle(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number): p5;
 
   /**
    *   Modifies the location from which ellipses,
@@ -1645,16 +1556,7 @@ declare global {
    *   @param y4 y-coordinate for the second anchor point
    *   @chainable
    */
-  function bezier(
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number,
-    x3: number,
-    y3: number,
-    x4: number,
-    y4: number,
-  ): p5;
+  function bezier(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, x4: number, y4: number): p5;
 
   /**
    *   Draws a cubic Bezier curve on the screen. These
@@ -1687,20 +1589,7 @@ declare global {
    *   @param z4 z-coordinate for the second anchor point
    *   @chainable
    */
-  function bezier(
-    x1: number,
-    y1: number,
-    z1: number,
-    x2: number,
-    y2: number,
-    z2: number,
-    x3: number,
-    y3: number,
-    z3: number,
-    x4: number,
-    y4: number,
-    z4: number,
-  ): p5;
+  function bezier(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, x3: number, y3: number, z3: number, x4: number, y4: number, z4: number): p5;
 
   /**
    *   Sets the resolution at which Bezier's curve is
@@ -1732,13 +1621,7 @@ declare global {
    *   @param t value between 0 and 1
    *   @return the value of the Bezier at position t
    */
-  function bezierPoint(
-    a: number,
-    b: number,
-    c: number,
-    d: number,
-    t: number,
-  ): number;
+  function bezierPoint(a: number, b: number, c: number, d: number, t: number): number;
 
   /**
    *   Evaluates the tangent to the Bezier at position t
@@ -1753,13 +1636,7 @@ declare global {
    *   @param t value between 0 and 1
    *   @return the tangent at position t
    */
-  function bezierTangent(
-    a: number,
-    b: number,
-    c: number,
-    d: number,
-    t: number,
-  ): number;
+  function bezierTangent(a: number, b: number, c: number, d: number, t: number): number;
 
   /**
    *   Draws a curved line on the screen between two
@@ -1788,16 +1665,7 @@ declare global {
    *   point
    *   @chainable
    */
-  function curve(
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number,
-    x3: number,
-    y3: number,
-    x4: number,
-    y4: number,
-  ): p5;
+  function curve(x1: number, y1: number, x2: number, y2: number, x3: number, y3: number, x4: number, y4: number): p5;
 
   /**
    *   Draws a curved line on the screen between two
@@ -1832,20 +1700,7 @@ declare global {
    *   point
    *   @chainable
    */
-  function curve(
-    x1: number,
-    y1: number,
-    z1: number,
-    x2: number,
-    y2: number,
-    z2: number,
-    x3: number,
-    y3: number,
-    z3: number,
-    x4: number,
-    y4: number,
-    z4: number,
-  ): p5;
+  function curve(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, x3: number, y3: number, z3: number, x4: number, y4: number, z4: number): p5;
 
   /**
    *   Sets the resolution at which curves display. The
@@ -1892,13 +1747,7 @@ declare global {
    *   @param t value between 0 and 1
    *   @return Curve value at position t
    */
-  function curvePoint(
-    a: number,
-    b: number,
-    c: number,
-    d: number,
-    t: number,
-  ): number;
+  function curvePoint(a: number, b: number, c: number, d: number, t: number): number;
 
   /**
    *   Evaluates the tangent to the curve at position t
@@ -1912,13 +1761,7 @@ declare global {
    *   @param t value between 0 and 1
    *   @return the tangent at position t
    */
-  function curveTangent(
-    a: number,
-    b: number,
-    c: number,
-    d: number,
-    t: number,
-  ): number;
+  function curveTangent(a: number, b: number, c: number, d: number, t: number): number;
 
   /**
    *   Use the beginContour() and endContour() functions
@@ -2014,14 +1857,7 @@ declare global {
    *   @param y4 y-coordinate for the anchor point
    *   @chainable
    */
-  function bezierVertex(
-    x2: number,
-    y2: number,
-    x3: number,
-    y3: number,
-    x4: number,
-    y4: number,
-  ): p5;
+  function bezierVertex(x2: number, y2: number, x3: number, y3: number, x4: number, y4: number): p5;
 
   /**
    *   Specifies vertex coordinates for Bezier curves.
@@ -2054,17 +1890,7 @@ declare global {
    *   WebGL mode)
    *   @chainable
    */
-  function bezierVertex(
-    x2: number,
-    y2: number,
-    z2: number,
-    x3: number,
-    y3: number,
-    z3: number,
-    x4: number,
-    y4: number,
-    z4: number,
-  ): p5;
+  function bezierVertex(x2: number, y2: number, z2: number, x3: number, y3: number, z3: number, x4: number, y4: number, z4: number): p5;
 
   /**
    *   Specifies vertex coordinates for curves. This
@@ -2195,14 +2021,7 @@ declare global {
    *   WebGL mode)
    *   @chainable
    */
-  function quadraticVertex(
-    cx: number,
-    cy: number,
-    cz: number,
-    x3: number,
-    y3: number,
-    z3: number,
-  ): p5;
+  function quadraticVertex(cx: number, cy: number, cz: number, x3: number, y3: number, z3: number): p5;
 
   /**
    *   All shapes are constructed by connecting a series
@@ -2843,12 +2662,7 @@ declare global {
    *   @param [canvas] existing html canvas element
    *   @return pointer to p5.Renderer holding canvas
    */
-  function createCanvas(
-    w: number,
-    h: number,
-    renderer?: p5.RENDERER,
-    canvas?: object,
-  ): p5.Renderer;
+  function createCanvas(w: number, h: number, renderer?: p5.RENDERER, canvas?: object): p5.Renderer;
 
   /**
    *   Creates a canvas element in the document and sets
@@ -2932,12 +2746,7 @@ declare global {
    *   @param [canvas] existing html canvas element
    *   @return offscreen graphics buffer
    */
-  function createGraphics(
-    w: number,
-    h: number,
-    renderer?: p5.RENDERER,
-    canvas?: object,
-  ): p5.Graphics;
+  function createGraphics(w: number, h: number, renderer?: p5.RENDERER, canvas?: object): p5.Graphics;
 
   /**
    *   Creates and returns a new p5.Graphics object. Use
@@ -3279,14 +3088,7 @@ declare global {
    *   matrix to be multiplied
    *   @chainable
    */
-  function applyMatrix(
-    a: number,
-    b: number,
-    c: number,
-    d: number,
-    e: number,
-    f: number,
-  ): p5;
+  function applyMatrix(a: number, b: number, c: number, d: number, e: number, f: number): p5;
 
   /**
    *   Multiplies the current matrix by the one specified
@@ -3580,10 +3382,7 @@ declare global {
    *   personal information should not be stored in local
    *   storage.
    */
-  function storeItem(
-    key: string,
-    value: string | number | object | boolean | p5.Color | p5.Vector,
-  ): void;
+  function storeItem(key: string, value: string | number | object | boolean | p5.Color | p5.Vector): void;
 
   /**
    *   Returns the value of an item that was stored in
@@ -3592,9 +3391,7 @@ declare global {
    *   local storage
    *   @return Value of stored item
    */
-  function getItem(
-    key: string,
-  ): number | object | string | boolean | p5.Color | p5.Vector;
+  function getItem(key: string): number | object | string | boolean | p5.Color | p5.Vector;
 
   /**
    *   Clears all local storage items set with
@@ -3646,10 +3443,7 @@ declare global {
    *   p5.Element, or HTML element to search within
    *   @return p5.Element containing node found
    */
-  function select(
-    selectors: string,
-    container?: string | p5.Element | HTMLElement,
-  ): p5.Element | null;
+  function select(selectors: string, container?: string | p5.Element | HTMLElement): p5.Element | null;
 
   /**
    *   Searches the page for elements that match the
@@ -3666,10 +3460,7 @@ declare global {
    *   @return Array of p5.Elements containing nodes
    *   found
    */
-  function selectAll(
-    selectors: string,
-    container?: string | p5.Element | HTMLElement,
-  ): p5.Element[];
+  function selectAll(selectors: string, container?: string | p5.Element | HTMLElement): p5.Element[];
 
   /**
    *   Removes all elements created by p5, except any
@@ -3758,12 +3549,7 @@ declare global {
    *   argument
    *   @return pointer to p5.Element holding created node
    */
-  function createImg(
-    src: string,
-    alt: string,
-    crossOrigin: string,
-    successCallback?: (...args: any[]) => any,
-  ): p5.Element;
+  function createImg(src: string, alt: string, crossOrigin: string, successCallback?: (...args: any[]) => any): p5.Element;
 
   /**
    *   Creates an <a></a> element in the DOM for
@@ -3790,12 +3576,7 @@ declare global {
    *   @return pointer to p5.Element holding the created
    *   node
    */
-  function createSlider(
-    min: number,
-    max: number,
-    value?: number,
-    step?: number,
-  ): p5.Element;
+  function createSlider(min: number, max: number, value?: number, step?: number): p5.Element;
 
   /**
    *   Creates a <button></button> element in the DOM.
@@ -4004,10 +3785,7 @@ declare global {
    *   @return pointer to p5.Element holding created DOM
    *   element
    */
-  function createFileInput(
-    callback: (...args: any[]) => any,
-    multiple?: boolean,
-  ): p5.Element;
+  function createFileInput(callback: (...args: any[]) => any, multiple?: boolean): p5.Element;
 
   /**
    *   Creates an HTML5 <video> element in the DOM for
@@ -4030,10 +3808,7 @@ declare global {
    *   buffering of content
    *   @return pointer to video p5.MediaElement
    */
-  function createVideo(
-    src: string | string[],
-    callback?: (...args: any[]) => any,
-  ): p5.MediaElement;
+  function createVideo(src: string | string[], callback?: (...args: any[]) => any): p5.MediaElement;
 
   /**
    *   Creates a hidden HTML5 <audio> element in the DOM
@@ -4054,10 +3829,7 @@ declare global {
    *   buffering of content
    *   @return pointer to audio p5.MediaElement
    */
-  function createAudio(
-    src?: string | string[],
-    callback?: (...args: any[]) => any,
-  ): p5.MediaElement;
+  function createAudio(src?: string | string[], callback?: (...args: any[]) => any): p5.MediaElement;
 
   /**
    *   Creates a new HTML5 <video> element that contains
@@ -4084,10 +3856,7 @@ declare global {
    *   stream has loaded
    *   @return capture video p5.Element
    */
-  function createCapture(
-    type: string | p5.TYPE | object,
-    callback?: (...args: any[]) => any,
-  ): p5.Element;
+  function createCapture(type: string | p5.TYPE | object, callback?: (...args: any[]) => any): p5.Element;
 
   /**
    *   Creates element with given tag in the DOM with
@@ -4727,11 +4496,7 @@ declare global {
    *   specific html5 canvas (optional)
    *   @param [extension] 'jpg' or 'png'
    */
-  function saveCanvas(
-    selectedCanvas: p5.Element | HTMLCanvasElement,
-    filename?: string,
-    extension?: string,
-  ): void;
+  function saveCanvas(selectedCanvas: p5.Element | HTMLCanvasElement, filename?: string, extension?: string): void;
 
   /**
    *   Save the current canvas as an image. The browser
@@ -4779,13 +4544,7 @@ declare global {
    *   Each object has three properties: imageData - an
    *   image/octet-stream, filename and extension.
    */
-  function saveFrames(
-    filename: string,
-    extension: string,
-    duration: number,
-    framerate: number,
-    callback?: (p1: any[]) => any,
-  ): void;
+  function saveFrames(filename: string, extension: string, duration: number, framerate: number, callback?: (p1: any[]) => any): void;
 
   /**
    *   Loads an image from a path and creates a p5.Image
@@ -4813,11 +4572,7 @@ declare global {
    *   if the image fails to load.
    *   @return the p5.Image object
    */
-  function loadImage(
-    path: string,
-    successCallback?: (p1: p5.Image) => any,
-    failureCallback?: (p1: Event) => any,
-  ): p5.Image;
+  function loadImage(path: string, successCallback?: (p1: p5.Image) => any, failureCallback?: (p1: Event) => any): p5.Image;
 
   /**
    *   Generates a gif of your current animation and
@@ -4901,13 +4656,7 @@ declare global {
    *   @param [width] the width to draw the image
    *   @param [height] the height to draw the image
    */
-  function image(
-    img: p5.Image | p5.Element | p5.Framebuffer,
-    x: number,
-    y: number,
-    width?: number,
-    height?: number,
-  ): void;
+  function image(img: p5.Image | p5.Element | p5.Framebuffer, x: number, y: number, width?: number, height?: number): void;
 
   /**
    *   Draw an image to the p5.js canvas. This function
@@ -5124,18 +4873,7 @@ declare global {
    *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
    *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.
    */
-  function blend(
-    srcImage: p5.Image,
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-    blendMode: p5.BLEND_MODE,
-  ): void;
+  function blend(srcImage: p5.Image, sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number, blendMode: p5.BLEND_MODE): void;
 
   /**
    *   Copies a region of pixels from one image to
@@ -5158,17 +4896,7 @@ declare global {
    *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
    *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.
    */
-  function blend(
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-    blendMode: p5.UNKNOWN_P5_CONSTANT,
-  ): void;
+  function blend(sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number, blendMode: p5.UNKNOWN_P5_CONSTANT): void;
 
   /**
    *   Copies a region of the canvas to another region of
@@ -5192,17 +4920,7 @@ declare global {
    *   @param dw destination image width
    *   @param dh destination image height
    */
-  function copy(
-    srcImage: p5.Image | p5.Element,
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-  ): void;
+  function copy(srcImage: p5.Image | p5.Element, sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number): void;
 
   /**
    *   Copies a region of the canvas to another region of
@@ -5225,16 +4943,7 @@ declare global {
    *   @param dw destination image width
    *   @param dh destination image height
    */
-  function copy(
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-  ): void;
+  function copy(sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number): void;
 
   /**
    *   Applies a filter to the canvas. The presets
@@ -5522,13 +5231,7 @@ declare global {
    *   argument
    *   @return JSON data
    */
-  function loadJSON(
-    path: string,
-    jsonpOptions?: object,
-    datatype?: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object | any[];
+  function loadJSON(path: string, jsonpOptions?: object, datatype?: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object | any[];
 
   /**
    *   Loads a JSON file from a file or a URL, and
@@ -5553,12 +5256,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function loadJSON(
-    path: string,
-    datatype: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object | any[];
+  function loadJSON(path: string, datatype: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object | any[];
 
   /**
    *   Loads a JSON file from a file or a URL, and
@@ -5582,11 +5280,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function loadJSON(
-    path: string,
-    callback: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object | any[];
+  function loadJSON(path: string, callback: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object | any[];
 
   /**
    *   Reads the contents of a file and creates a String
@@ -5615,11 +5309,7 @@ declare global {
    *   argument
    *   @return Array of Strings
    */
-  function loadStrings(
-    filename: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): string[];
+  function loadStrings(filename: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): string[];
 
   /**
    *   Reads the contents of a file or URL and creates a
@@ -5654,13 +5344,7 @@ declare global {
    *   argument
    *   @return Table object containing data
    */
-  function loadTable(
-    filename: string,
-    extension?: string,
-    header?: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object;
+  function loadTable(filename: string, extension?: string, header?: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object;
 
   /**
    *   Reads the contents of a file and creates an XML
@@ -5694,11 +5378,7 @@ declare global {
    *   argument
    *   @return XML object containing data
    */
-  function loadXML(
-    filename: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object;
+  function loadXML(filename: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object;
 
   /**
    *   This method is suitable for fetching files up to
@@ -5711,11 +5391,7 @@ declare global {
    *   @return an object whose 'bytes' property will be
    *   the loaded buffer
    */
-  function loadBytes(
-    file: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): object;
+  function loadBytes(file: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): object;
 
   /**
    *   Method for executing an HTTP GET request. If data
@@ -5740,13 +5416,7 @@ declare global {
    *   the operation completes successfully or rejects
    *   with the error after one occurs.
    */
-  function httpGet(
-    path: string,
-    datatype?: string,
-    data?: object | boolean,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpGet(path: string, datatype?: string, data?: object | boolean, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP GET request. If data
@@ -5766,12 +5436,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function httpGet(
-    path: string,
-    data: object | boolean,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpGet(path: string, data: object | boolean, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP GET request. If data
@@ -5790,11 +5455,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function httpGet(
-    path: string,
-    callback: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpGet(path: string, callback: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP POST request. If data
@@ -5815,13 +5476,7 @@ declare global {
    *   the operation completes successfully or rejects
    *   with the error after one occurs.
    */
-  function httpPost(
-    path: string,
-    datatype?: string,
-    data?: object | boolean,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpPost(path: string, datatype?: string, data?: object | boolean, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP POST request. If data
@@ -5837,12 +5492,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function httpPost(
-    path: string,
-    data: object | boolean,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpPost(path: string, data: object | boolean, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP POST request. If data
@@ -5857,11 +5507,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function httpPost(
-    path: string,
-    callback: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpPost(path: string, callback: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP request. If data type
@@ -5889,14 +5535,7 @@ declare global {
    *   the operation completes successfully or rejects
    *   with the error after one occurs.
    */
-  function httpDo(
-    path: string,
-    method?: string,
-    datatype?: string,
-    data?: object,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpDo(path: string, method?: string, datatype?: string, data?: object, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Method for executing an HTTP request. If data type
@@ -5918,12 +5557,7 @@ declare global {
    *   there is an error, response is passed in as first
    *   argument
    */
-  function httpDo(
-    path: string,
-    options: object,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function httpDo(path: string, options: object, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): Promise<any>;
   function createWriter(name: string, extension?: string): p5.PrintWriter;
 
   /**
@@ -5958,11 +5592,7 @@ declare global {
    *   indicates that the output will be optimized for
    *   filesize, rather than readability.
    */
-  function save(
-    objectOrFilename?: object | string,
-    filename?: string,
-    options?: boolean | string,
-  ): void;
+  function save(objectOrFilename?: object | string, filename?: string, options?: boolean | string): void;
 
   /**
    *   Writes the contents of an Array or a JSON object
@@ -5973,11 +5603,7 @@ declare global {
    *   spaces from the output file to optimize filesize
    *   (but not readability).
    */
-  function saveJSON(
-    json: any[] | object,
-    filename: string,
-    optimize?: boolean,
-  ): void;
+  function saveJSON(json: any[] | object, filename: string, optimize?: boolean): void;
 
   /**
    *   Writes an array of Strings to a text file, one
@@ -5989,12 +5615,7 @@ declare global {
    *   @param [extension] the filename's extension
    *   @param [isCRLF] if true, change line-break to CRLF
    */
-  function saveStrings(
-    list: string[],
-    filename: string,
-    extension?: string,
-    isCRLF?: boolean,
-  ): void;
+  function saveStrings(list: string[], filename: string, extension?: string, isCRLF?: boolean): void;
 
   /**
    *   Writes the contents of a Table object to a file.
@@ -6064,14 +5685,7 @@ declare global {
    *   @param z2 z-coordinate of the second point
    *   @return distance between the two points
    */
-  function dist(
-    x1: number,
-    y1: number,
-    z1: number,
-    x2: number,
-    y2: number,
-    z2: number,
-  ): number;
+  function dist(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number): number;
 
   /**
    *   Returns Euler's number e (2.71828...) raised to
@@ -6152,14 +5766,7 @@ declare global {
    *   newly mapped range
    *   @return remapped number
    */
-  function map(
-    value: number,
-    start1: number,
-    stop1: number,
-    start2: number,
-    stop2: number,
-    withinBounds?: boolean,
-  ): number;
+  function map(value: number, start1: number, stop1: number, start2: number, stop2: number, withinBounds?: boolean): number;
 
   /**
    *   Determines the largest value in a sequence of
@@ -6733,11 +6340,7 @@ declare global {
    *   error occurs
    *   @return p5.Font object
    */
-  function loadFont(
-    path: string,
-    callback?: (...args: any[]) => any,
-    onError?: (...args: any[]) => any,
-  ): p5.Font;
+  function loadFont(path: string, callback?: (...args: any[]) => any, onError?: (...args: any[]) => any): p5.Font;
 
   /**
    *   Draws text to the screen. Displays the information
@@ -6779,13 +6382,7 @@ declare global {
    *   box, see rectMode() for more info
    *   @chainable
    */
-  function text(
-    str: string | object | any[] | number | boolean,
-    x: number,
-    y: number,
-    x2?: number,
-    y2?: number,
-  ): p5;
+  function text(str: string | object | any[] | number | boolean, x: number, y: number, x2?: number, y2?: number): p5;
 
   /**
    *   Sets the current font that will be drawn with the
@@ -6853,13 +6450,7 @@ declare global {
    *   @param length number of Array elements to be
    *   copied
    */
-  function arrayCopy(
-    src: any[],
-    srcPosition: number,
-    dst: any[],
-    dstPosition: number,
-    length: number,
-  ): void;
+  function arrayCopy(src: any[], srcPosition: number, dst: any[], dstPosition: number, length: number): void;
 
   /**
    *   Copies an array (or part of an array) to another
@@ -7254,11 +6845,7 @@ declare global {
    *   the decimal point
    *   @return formatted String
    */
-  function nf(
-    num: number | string,
-    left?: number | string,
-    right?: number | string,
-  ): string;
+  function nf(num: number | string, left?: number | string, right?: number | string): string;
 
   /**
    *   Utility function for formatting numbers into
@@ -7284,11 +6871,7 @@ declare global {
    *   the decimal point
    *   @return formatted Strings
    */
-  function nf(
-    nums: any[],
-    left?: number | string,
-    right?: number | string,
-  ): string[];
+  function nf(nums: any[], left?: number | string, right?: number | string): string[];
 
   /**
    *   Utility function for formatting numbers into
@@ -7551,12 +7134,7 @@ declare global {
    *   subdivisions in y-dimension
    *   @chainable
    */
-  function plane(
-    width?: number,
-    height?: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function plane(width?: number, height?: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draw a box with given width, height and depth
@@ -7569,13 +7147,7 @@ declare global {
    *   subdivisions in y-dimension
    *   @chainable
    */
-  function box(
-    width?: number,
-    height?: number,
-    depth?: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function box(width?: number, height?: number, depth?: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draw a sphere with given radius. DetailX and
@@ -7615,14 +7187,7 @@ declare global {
    *   cylinder
    *   @chainable
    */
-  function cylinder(
-    radius?: number,
-    height?: number,
-    detailX?: number,
-    detailY?: number,
-    bottomCap?: boolean,
-    topCap?: boolean,
-  ): p5;
+  function cylinder(radius?: number, height?: number, detailX?: number, detailY?: number, bottomCap?: boolean, topCap?: boolean): p5;
 
   /**
    *   Draw a cone with given radius and height DetailX
@@ -7641,13 +7206,7 @@ declare global {
    *   @param [cap] whether to draw the base of the cone
    *   @chainable
    */
-  function cone(
-    radius?: number,
-    height?: number,
-    detailX?: number,
-    detailY?: number,
-    cap?: boolean,
-  ): p5;
+  function cone(radius?: number, height?: number, detailX?: number, detailY?: number, cap?: boolean): p5;
 
   /**
    *   Draw an ellipsoid with given radius DetailX and
@@ -7669,13 +7228,7 @@ declare global {
    *   browser.
    *   @chainable
    */
-  function ellipsoid(
-    radiusx?: number,
-    radiusy?: number,
-    radiusz?: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function ellipsoid(radiusx?: number, radiusy?: number, radiusz?: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Draw a torus with given radius and tube radius
@@ -7697,12 +7250,7 @@ declare global {
    *   geometry default is 16
    *   @chainable
    */
-  function torus(
-    radius?: number,
-    tubeRadius?: number,
-    detailX?: number,
-    detailY?: number,
-  ): p5;
+  function torus(radius?: number, tubeRadius?: number, detailX?: number, detailY?: number): p5;
 
   /**
    *   Allows movement around a 3D sketch using a mouse
@@ -7744,12 +7292,7 @@ declare global {
    *   regardless of true/false.
    *   @chainable
    */
-  function orbitControl(
-    sensitivityX?: number,
-    sensitivityY?: number,
-    sensitivityZ?: number,
-    options?: object,
-  ): p5;
+  function orbitControl(sensitivityX?: number, sensitivityY?: number, sensitivityZ?: number, options?: object): p5;
 
   /**
    *   debugMode() helps visualize 3D space by adding a
@@ -7829,14 +7372,7 @@ declare global {
    *   @param [yOff] Y axis offset from origin (0,0,0)
    *   @param [zOff] Z axis offset from origin (0,0,0)
    */
-  function debugMode(
-    mode: p5.UNKNOWN_P5_CONSTANT,
-    gridSize?: number,
-    gridDivisions?: number,
-    xOff?: number,
-    yOff?: number,
-    zOff?: number,
-  ): void;
+  function debugMode(mode: p5.UNKNOWN_P5_CONSTANT, gridSize?: number, gridDivisions?: number, xOff?: number, yOff?: number, zOff?: number): void;
 
   /**
    *   debugMode() helps visualize 3D space by adding a
@@ -7865,13 +7401,7 @@ declare global {
    *   @param [yOff] Y axis offset from origin (0,0,0)
    *   @param [zOff] Z axis offset from origin (0,0,0)
    */
-  function debugMode(
-    mode: p5.UNKNOWN_P5_CONSTANT,
-    axesSize?: number,
-    xOff?: number,
-    yOff?: number,
-    zOff?: number,
-  ): void;
+  function debugMode(mode: p5.UNKNOWN_P5_CONSTANT, axesSize?: number, xOff?: number, yOff?: number, zOff?: number): void;
 
   /**
    *   debugMode() helps visualize 3D space by adding a
@@ -8167,14 +7697,7 @@ declare global {
    *   of -1 to 1)
    *   @chainable
    */
-  function directionalLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    x: number,
-    y: number,
-    z: number,
-  ): p5;
+  function directionalLight(v1: number, v2: number, v3: number, x: number, y: number, z: number): p5;
 
   /**
    *   Creates a directional light with the given color
@@ -8209,12 +7732,7 @@ declare global {
    *   @param direction direction of light as a p5.Vector
    *   @chainable
    */
-  function directionalLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    direction: p5.Vector,
-  ): p5;
+  function directionalLight(v1: number, v2: number, v3: number, direction: p5.Vector): p5;
 
   /**
    *   Creates a directional light with the given color
@@ -8250,12 +7768,7 @@ declare global {
    *   of -1 to 1)
    *   @chainable
    */
-  function directionalLight(
-    color: p5.Color | number[] | string,
-    x: number,
-    y: number,
-    z: number,
-  ): p5;
+  function directionalLight(color: p5.Color | number[] | string, x: number, y: number, z: number): p5;
 
   /**
    *   Creates a directional light with the given color
@@ -8286,10 +7799,7 @@ declare global {
    *   @param direction direction of light as a p5.Vector
    *   @chainable
    */
-  function directionalLight(
-    color: p5.Color | number[] | string,
-    direction: p5.Vector,
-  ): p5;
+  function directionalLight(color: p5.Color | number[] | string, direction: p5.Vector): p5;
 
   /**
    *   Creates a point light with the given color and
@@ -8317,14 +7827,7 @@ declare global {
    *   @param z z component of position
    *   @chainable
    */
-  function pointLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    x: number,
-    y: number,
-    z: number,
-  ): p5;
+  function pointLight(v1: number, v2: number, v3: number, x: number, y: number, z: number): p5;
 
   /**
    *   Creates a point light with the given color and
@@ -8350,12 +7853,7 @@ declare global {
    *   @param position of light as a p5.Vector
    *   @chainable
    */
-  function pointLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    position: p5.Vector,
-  ): p5;
+  function pointLight(v1: number, v2: number, v3: number, position: p5.Vector): p5;
 
   /**
    *   Creates a point light with the given color and
@@ -8379,12 +7877,7 @@ declare global {
    *   @param z z component of position
    *   @chainable
    */
-  function pointLight(
-    color: p5.Color | number[] | string,
-    x: number,
-    y: number,
-    z: number,
-  ): p5;
+  function pointLight(color: p5.Color | number[] | string, x: number, y: number, z: number): p5;
 
   /**
    *   Creates a point light with the given color and
@@ -8406,10 +7899,7 @@ declare global {
    *   @param position of light as a p5.Vector
    *   @chainable
    */
-  function pointLight(
-    color: p5.Color | number[] | string,
-    position: p5.Vector,
-  ): p5;
+  function pointLight(color: p5.Color | number[] | string, position: p5.Vector): p5;
 
   /**
    *   Places an ambient and directional light in the
@@ -8444,11 +7934,7 @@ declare global {
    *   falloff
    *   @chainable
    */
-  function lightFalloff(
-    constant: number,
-    linear: number,
-    quadratic: number,
-  ): p5;
+  function lightFalloff(constant: number, linear: number, quadratic: number): p5;
 
   /**
    *   Creates a spot light with the given color,
@@ -8498,19 +7984,7 @@ declare global {
    *   Defaults to 100
    *   @chainable
    */
-  function spotLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    x: number,
-    y: number,
-    z: number,
-    rx: number,
-    ry: number,
-    rz: number,
-    angle?: number,
-    concentration?: number,
-  ): p5;
+  function spotLight(v1: number, v2: number, v3: number, x: number, y: number, z: number, rx: number, ry: number, rz: number, angle?: number, concentration?: number): p5;
 
   /**
    *   Creates a spot light with the given color,
@@ -8548,13 +8022,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    color: p5.Color | number[] | string,
-    position: p5.Vector,
-    direction: p5.Vector,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(color: p5.Color | number[] | string, position: p5.Vector, direction: p5.Vector, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8596,15 +8064,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    position: p5.Vector,
-    direction: p5.Vector,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(v1: number, v2: number, v3: number, position: p5.Vector, direction: p5.Vector, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8644,15 +8104,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    color: p5.Color | number[] | string,
-    x: number,
-    y: number,
-    z: number,
-    direction: p5.Vector,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(color: p5.Color | number[] | string, x: number, y: number, z: number, direction: p5.Vector, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8695,15 +8147,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    color: p5.Color | number[] | string,
-    position: p5.Vector,
-    rx: number,
-    ry: number,
-    rz: number,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(color: p5.Color | number[] | string, position: p5.Vector, rx: number, ry: number, rz: number, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8747,17 +8191,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    x: number,
-    y: number,
-    z: number,
-    direction: p5.Vector,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(v1: number, v2: number, v3: number, x: number, y: number, z: number, direction: p5.Vector, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8804,17 +8238,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    v1: number,
-    v2: number,
-    v3: number,
-    position: p5.Vector,
-    rx: number,
-    ry: number,
-    rz: number,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(v1: number, v2: number, v3: number, position: p5.Vector, rx: number, ry: number, rz: number, angle?: number, concentration?: number): void;
 
   /**
    *   Creates a spot light with the given color,
@@ -8859,17 +8283,7 @@ declare global {
    *   @param [concentration] concentration of cone.
    *   Defaults to 100
    */
-  function spotLight(
-    color: p5.Color | number[] | string,
-    x: number,
-    y: number,
-    z: number,
-    rx: number,
-    ry: number,
-    rz: number,
-    angle?: number,
-    concentration?: number,
-  ): void;
+  function spotLight(color: p5.Color | number[] | string, x: number, y: number, z: number, rx: number, ry: number, rz: number, angle?: number, concentration?: number): void;
 
   /**
    *   Removes all lights present in a sketch. All
@@ -8914,13 +8328,7 @@ declare global {
    *   (.stl, .obj).
    *   @return the p5.Geometry object
    */
-  function loadModel(
-    path: string,
-    normalize: boolean,
-    successCallback?: (p1: p5.Geometry) => any,
-    failureCallback?: (p1: Event) => any,
-    fileType?: string,
-  ): p5.Geometry;
+  function loadModel(path: string, normalize: boolean, successCallback?: (p1: p5.Geometry) => any, failureCallback?: (p1: Event) => any, fileType?: string): p5.Geometry;
 
   /**
    *   Load a 3d model from an OBJ or STL file.
@@ -8952,12 +8360,7 @@ declare global {
    *   (.stl, .obj).
    *   @return the p5.Geometry object
    */
-  function loadModel(
-    path: string,
-    successCallback?: (p1: p5.Geometry) => any,
-    failureCallback?: (p1: Event) => any,
-    fileType?: string,
-  ): p5.Geometry;
+  function loadModel(path: string, successCallback?: (p1: p5.Geometry) => any, failureCallback?: (p1: Event) => any, fileType?: string): p5.Geometry;
 
   /**
    *   Render a 3d model to the screen.
@@ -8985,12 +8388,7 @@ declare global {
    *   @return a shader object created from the provided
    *   vertex and fragment shader files.
    */
-  function loadShader(
-    vertFilename: string,
-    fragFilename: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): p5.Shader;
+  function loadShader(vertFilename: string, fragFilename: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): p5.Shader;
 
   /**
    *   Creates a new p5.Shader object from the provided
@@ -9042,9 +8440,7 @@ declare global {
    *   @param tex image to use as texture
    *   @chainable
    */
-  function texture(
-    tex: p5.Image | p5.MediaElement | p5.Graphics | p5.Framebuffer,
-  ): p5;
+  function texture(tex: p5.Image | p5.MediaElement | p5.Graphics | p5.Framebuffer): p5;
 
   /**
    *   Sets the coordinate space for texture mapping. The
@@ -9201,12 +8597,7 @@ declare global {
    *   color range (default is 0-255)
    *   @chainable
    */
-  function emissiveMaterial(
-    v1: number,
-    v2: number,
-    v3: number,
-    alpha?: number,
-  ): p5;
+  function emissiveMaterial(v1: number, v2: number, v3: number, alpha?: number): p5;
 
   /**
    *   Sets the emissive color of the material. An
@@ -9290,12 +8681,7 @@ declare global {
    *   color range (default is 0-255)
    *   @chainable
    */
-  function specularMaterial(
-    v1: number,
-    v2: number,
-    v3: number,
-    alpha?: number,
-  ): p5;
+  function specularMaterial(v1: number, v2: number, v3: number, alpha?: number): p5;
 
   /**
    *   Sets the specular color of the material. A
@@ -9364,17 +8750,7 @@ declare global {
    *   camera
    *   @chainable
    */
-  function camera(
-    x?: number,
-    y?: number,
-    z?: number,
-    centerX?: number,
-    centerY?: number,
-    centerZ?: number,
-    upX?: number,
-    upY?: number,
-    upZ?: number,
-  ): p5;
+  function camera(x?: number, y?: number, z?: number, centerX?: number, centerY?: number, centerZ?: number, upX?: number, upY?: number, upZ?: number): p5;
 
   /**
    *   Sets a perspective projection for the current
@@ -9400,12 +8776,7 @@ declare global {
    *   @param [far] frustum far plane length
    *   @chainable
    */
-  function perspective(
-    fovy?: number,
-    aspect?: number,
-    near?: number,
-    far?: number,
-  ): p5;
+  function perspective(fovy?: number, aspect?: number, near?: number, far?: number): p5;
 
   /**
    *   Sets an orthographic projection for the current
@@ -9431,14 +8802,7 @@ declare global {
    *   @param [far] camera frustum far plane
    *   @chainable
    */
-  function ortho(
-    left?: number,
-    right?: number,
-    bottom?: number,
-    top?: number,
-    near?: number,
-    far?: number,
-  ): p5;
+  function ortho(left?: number, right?: number, bottom?: number, top?: number, near?: number, far?: number): p5;
 
   /**
    *   Sets the frustum of the current camera as defined
@@ -9466,14 +8830,7 @@ declare global {
    *   @param [far] camera frustum far plane
    *   @chainable
    */
-  function frustum(
-    left?: number,
-    right?: number,
-    bottom?: number,
-    top?: number,
-    near?: number,
-    far?: number,
-  ): p5;
+  function frustum(left?: number, right?: number, bottom?: number, top?: number, near?: number, far?: number): p5;
 
   /**
    *   Creates a new p5.Camera object and sets it as the
@@ -9643,10 +9000,7 @@ declare global {
    *   @return Returns a Promise that resolves when the
    *   AudioContext state is 'running'
    */
-  function userStartAudio(
-    elements?: Element | any[],
-    callback?: (...args: any[]) => any,
-  ): Promise<any>;
+  function userStartAudio(elements?: Element | any[], callback?: (...args: any[]) => any): Promise<any>;
 
   /**
    *   Returns a number representing the output volume
@@ -9682,11 +9036,7 @@ declare global {
    *   @param [timeFromNow] Schedule this event to happen
    *   at t seconds in the future
    */
-  function outputVolume(
-    volume: number | object,
-    rampTime?: number,
-    timeFromNow?: number,
-  ): void;
+  function outputVolume(volume: number | object, rampTime?: number, timeFromNow?: number): void;
 
   /**
    *   Returns a number representing the sample rate, in
@@ -9762,12 +9112,7 @@ declare global {
    *   the percentage loaded so far, from 0.0 to 1.0.
    *   @return Returns a p5.SoundFile
    */
-  function loadSound(
-    path: string | any[],
-    successCallback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-    whileLoading?: (...args: any[]) => any,
-  ): p5.SoundFile;
+  function loadSound(path: string | any[], successCallback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any, whileLoading?: (...args: any[]) => any): p5.SoundFile;
 
   /**
    *   Create a p5.Convolver. Accepts a path to a
@@ -9781,11 +9126,7 @@ declare global {
    *   is not successful. A custom error will be passed
    *   in as the argument to the callback function.
    */
-  function createConvolver(
-    path: string,
-    callback?: (...args: any[]) => any,
-    errorCallback?: (...args: any[]) => any,
-  ): p5.Convolver;
+  function createConvolver(path: string, callback?: (...args: any[]) => any, errorCallback?: (...args: any[]) => any): p5.Convolver;
 
   /**
    *   Set the global tempo, in beats per minute, for all

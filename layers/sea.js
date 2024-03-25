@@ -1,6 +1,6 @@
 let seaTexture;
 
-export function createSeaTexture() {
+function createSeaTexture() {
   seaTexture = createImage(1, height / 4);
 
   const startColor = color(51, 113, 158);
@@ -17,7 +17,7 @@ export function createSeaTexture() {
 
 const rectangles = [];
 
-export function setupSea() {
+function setupSea() {
   while (rectangles.length < 25) {
     rectangles.push({
       x: Math.floor((Math.random() * width) / 3) + width / 3,
@@ -29,7 +29,7 @@ export function setupSea() {
   }
 }
 
-export function drawSea() {
+function drawSea() {
   push();
 
   image(seaTexture, 0, 0, width, height / 4);

@@ -1,4 +1,4 @@
-export const mountains = [];
+const mountains = [];
 
 function createMountainTexture(color) {
   const texture = createGraphics(1000, 1000);
@@ -21,7 +21,7 @@ function createMountainTexture(color) {
   return texture;
 }
 
-export function setupMountains() {
+function setupMountains() {
   [color(36, 51, 38), color(71, 108, 66), color(117, 132, 76), color(71, 108, 66), color(57, 92, 97), color(118, 145, 149)].forEach((c) => {
     mountains.push(createMountainTexture(c));
     mountains.push(createMountainTexture(c));

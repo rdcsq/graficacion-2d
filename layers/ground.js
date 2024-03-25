@@ -1,6 +1,6 @@
 let roadTexture;
 
-export function createRoadTexture() {
+function createRoadTexture() {
   roadTexture = createImage(1, height / 2);
   roadTexture.loadPixels();
 
@@ -12,7 +12,7 @@ export function createRoadTexture() {
   roadTexture.updatePixels();
 }
 
-export function drawGround() {
+function drawGround() {
   push();
 
   image(roadTexture, 0, height / 2, width, height);

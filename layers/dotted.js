@@ -1,7 +1,7 @@
-export let dottedTexture;
-export let dottedTextureSemitransparent;
+let dottedTexture;
+let dottedTextureSemitransparent;
 
-export function createDottedTexture() {
+function createDottedTexture() {
   dottedTexture = createGraphics(width, height);
   dottedTextureSemitransparent = createGraphics(width, height);
 

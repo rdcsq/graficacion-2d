@@ -1,4 +1,4 @@
-export function drawCar() {
+function drawCar() {
   push();
   noStroke();
 

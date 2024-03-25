@@ -1,6 +1,3 @@
-import { easeInOutQuint } from '../utils/easings.js';
-import { dottedTexture } from './dotted.js';
-
 let sunJumpFrame = 0;
 let sunOuterRingOffset = 0;
 
@@ -15,7 +12,7 @@ let sunRayWidths = [
   [sunDiameter + 330, 80],
 ];
 
-export function drawSun() {
+function drawSun() {
   const centerX = width / 2;
   const centerY = height / 2;
 

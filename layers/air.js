@@ -1,5 +1,3 @@
-import { dottedTextureSemitransparent } from './dotted.js';
-
 let progressBottom = [
   { x: 50, progress: 0.3 },
   { x: 550, progress: 0.5 },
@@ -40,7 +38,7 @@ let progressRight = [
 ];
 
 // warning: do not read :)
-export function drawSpeedDots() {
+function drawSpeedDots() {
   push();
   beginClip();
   for (const element of progressBottom) {

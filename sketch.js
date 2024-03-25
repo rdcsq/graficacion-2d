@@ -1,14 +1,13 @@
 /// <reference path="./_libs/p5.global.d.ts" />
-
-import { drawSpeedDots } from './layers/air.js';
-import { createSeaTexture, drawSea, setupSea } from './layers/sea.js';
-import { createRoadTexture, drawGround } from './layers/ground.js';
-import { createDottedTexture } from './layers/dotted.js';
-import { drawSun } from './layers/sun.js';
-import { mountains, setupMountains } from './layers/mountain.js';
-import { drawCar } from './layers/car.js';
-import { drawShimaRin } from './layers/rin.js';
-import { easeInOutSine } from './utils/easings.js';
+/// <reference path="./utils/easings.d.ts" />
+/// <reference path="./layers/air.d.ts" />
+/// <reference path="./layers/car.d.ts" />
+/// <reference path="./layers/dotted.d.ts" />
+/// <reference path="./layers/ground.d.ts" />
+/// <reference path="./layers/mountain.d.ts" />
+/// <reference path="./layers/rin.d.ts" />
+/// <reference path="./layers/sea.d.ts" />
+/// <reference path="./layers/sun.d.ts" />
 
 function setup() {
   createCanvas(1920, 1080);

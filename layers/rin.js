@@ -1,4 +1,4 @@
-export function drawShimaRin() {
+function drawShimaRin() {
   push();
   noStroke();
 
